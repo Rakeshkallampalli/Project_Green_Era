@@ -8,10 +8,8 @@ from django.shortcuts import redirect, get_object_or_404
 from django.shortcuts import render
 
 from Eco_friendly_products import settings
-from .models import Product,
+from .models import Product
 from django.views import View
-
-
 
 
 def main(request):
@@ -20,7 +18,6 @@ def main(request):
     context = {
         'products': Product.objects.order_by('-created_at')[:8],
     }
-
 
 
     if request.method == 'POST' and context['form'].is_valid():
