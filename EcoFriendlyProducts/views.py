@@ -26,6 +26,7 @@ def main(request):
         df = pd.read_excel(file_path) if os.path.exists(file_path) else pd.DataFrame(
             columns=['name', 'email', 'phone', 'message'])
         new_data = pd.DataFrame([data])
+
         df = pd.concat([df, new_data], ignore_index=True)
         df.to_excel(file_path, index=False)
         return redirect('main')
