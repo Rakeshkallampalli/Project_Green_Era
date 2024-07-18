@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3728df3-9330-4026-9017-211a9a4ac70c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Green_era.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Green_era.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Green_era/EcoFriendlyProduct/static/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Green_era/EcoFriendlyProduct/static/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Green_era/EcoFriendlyProduct/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Green_era/EcoFriendlyProduct/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721066293959</updated>
       <workItem from="1721066397963" duration="3411000" />
-      <workItem from="1721243749316" duration="2235000" />
+      <workItem from="1721243749316" duration="2436000" />
     </task>
     <servers />
   </component>

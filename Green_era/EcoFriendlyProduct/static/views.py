@@ -26,7 +26,7 @@ class Product:
 
 
 class UserRating:
-    pass
+
 
 
 @method_decorator(csrf_exempt, name='dispatch')
