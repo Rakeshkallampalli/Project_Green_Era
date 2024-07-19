@@ -11,6 +11,7 @@ from django.views.decorators.csrf import csrf_exempt
 from rest_framework import status
 
 from ecoFriendly import settings
+from .forms import CustomPasswordResetForm
 from .models import Product, UserRating, User, UserDailyVisit
 from django.views import View
 
@@ -59,4 +60,34 @@ class AddRatingView(View):
             rating.delete()
             return JsonResponse({'message': 'Rating deleted successfully'}, status=200)
 
+
+def generate_random_password(param, param1):
+    pass
+
+
+def send_password_reset_email(email, new_password):
+    pass
+
+
+def forgot_password(request):
+    if request.method == 'POST':
+        form = CustomPasswordResetForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            try:
+                user = User.objects.get(email=email)
+                new_password = generate_random_password(8, 20)
+                send_password_reset_email(email, new_password)
+                user.set_password(new_password)
+                user.save()
+                return render(request, 'EcoFriendlyProducts/forgot_password.html', {
+                    'form': form,
+                    'success_message': 'A password reset email has been sent to the provided email address.'
+                })
+            except User.DoesNotExist:
+                form.add_error('email', 'No account found with that email address.')
+    else:
+        form = CustomPasswordResetForm()
+
+    return render(request, 'EcoFriendlyProducts/forgot_password.html', {'form': form})
 
