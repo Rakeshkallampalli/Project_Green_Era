@@ -254,9 +254,9 @@
             {% endif %}
         {% endfor %}
         {% if user.is_authenticated and not isUserAddedReview %}
-        <button class="add-review-button" onclick="openModal()">Add a Review</button>
-            {% else %}
-                <p> <span><a href="{% url 'login' %}">Login</a></span> to add a review!</p>
+            <button class="add-review-button" onclick="openModal()">Add a Review</button>
+        {% elif not user.is_authenticated %}
+            <p> <span><a href="{% url 'login' %}">Login</a></span> to add a review!</p>
         {% endif %}
     </div>
 </div>
