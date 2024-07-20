@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e32169b-dde3-4630-8a51-624baf4cbe73" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Green_era/EcoFriendlyProduct/Static/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/Green_era/EcoFriendlyProduct/Static/view.py" afterDir="false" />
-    </list>
+    <list default="true" id="3e32169b-dde3-4630-8a51-624baf4cbe73" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,8 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -42,6 +40,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
     "git-widget-placeholder": "Saicharan",
+    "last_opened_file_path": "/Users/saicharankalluri/PycharmProjects/Green_era/EcoFriendlyProducts/static/EcoFriendlyProducts/photos",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,6 +50,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/EcoFriendlyProducts/static/EcoFriendlyProducts/photos" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Green_era" type="Python.DjangoServer" factoryName="Django server">
       <module name="Green_era" />
