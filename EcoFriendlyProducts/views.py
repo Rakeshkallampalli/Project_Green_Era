@@ -1,12 +1,8 @@
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import AuthenticationForm
 from django.shortcuts import render, redirect
-from django.shortcuts import render, redirect
 from forms import UserRegistrationForm
 
-
-
-from django.contrib import messages
 
 def register(request):
     if request.method == 'POST':
@@ -19,6 +15,7 @@ def register(request):
     else:
         form = UserRegistrationForm()
     return render(request, 'register.html', {'form': form})
+
 
 def user_login(request):
     if request.method == 'POST':
