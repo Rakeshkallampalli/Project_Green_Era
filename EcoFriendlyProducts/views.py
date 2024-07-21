@@ -91,3 +91,6 @@ def forgot_password(request):
 
     return render(request, 'EcoFriendlyProducts/forgot_password.html', {'form': form})
 
+def forgot_password_view(request):
+    form = CustomPasswordResetForm()
+    return render(request, 'EcoFriendlyProducts/forgot_password.html', {'form': form})
