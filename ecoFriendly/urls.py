@@ -7,6 +7,7 @@ import EcoFriendlyProducts
 
 urlpatterns = [
                 path("admin/", admin.site.urls),
+                path('accounts/login/', EcoFriendlyProducts.views.user_login, name='login'),  # Default login view
                 path('login/', EcoFriendlyProducts.views.user_login, name='login'),
                 path('logout/', EcoFriendlyProducts.views.user_logout, name='logout'),
               ]
